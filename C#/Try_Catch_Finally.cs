@@ -14,7 +14,7 @@ class Program
         catch (ArgumentNullException ex)    //Boş değer alınca
         {
             Console.WriteLine("Boş değer girdiniz.");
-            Console.WriteLine("Hata: " + ex);
+            Console.WriteLine("Hata: " + ex.Message);   //ex.Message olarak özet hata mesajı da kullanılabilir
         }
         catch (OverflowException ex)    //Int değer dışında bir değer alındığında
         {
